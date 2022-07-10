@@ -1,0 +1,72 @@
+.login {
+    background-image: url("./movie-theater-g60daa98a1_1920.jpg");
+    height: 118vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.heading
+{
+  margin-top: 160px;
+  font-family: 'Times New Roman', Times, serif;
+  color:brown;
+  font-size: 5rem;
+}
+.login__container {
+    margin-top: 69px;
+    width: 700px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    color: black;
+}
+
+.login__container > h1 {
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+
+.login__container > form > h5 {
+    margin-bottom: 5px;
+}
+
+.login__container > form > input {
+    height: 30px;
+    margin-bottom: 10px;
+    background-color: white;
+    width: 98%;
+  }
+
+.login__container > p {
+    margin-top: 15px;
+    font-size: 12px;
+}
+
+.login__signInButton {
+    background: #f0c14b;
+    border-radius: 2px;
+    width: 100%;
+    height: 30px;
+    border: 1px solid;
+    margin-top: 10px;
+    border-color: #a88734 #9c7e31 #846a29;
+  }
+
+  .login__registerButton {
+    border-radius: 2px;
+    width: 100%;
+    height: 30px;
+    border: 1px solid;
+    margin-top: 10px;
+    border-color: darkgray;
+  }
+  footer{
+    margin-top: 70px;
+    font-weight: bolder;
+    font-size: 2rem;
+    color:yellow;
+  }
+  
