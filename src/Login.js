@@ -15,7 +15,7 @@ function Login() {
         auth
             .signInWithEmailAndPassword(email, password)
             .then(auth => {
-                navigate('/home') 
+                navigate("./home", { replace: true });
             })
             .catch(error => alert(error.message))
     }
@@ -42,10 +42,12 @@ function Login() {
   
                 <form>
                     <h5>E-mail</h5>
-                    <input type='text' value={email} onChange={e => setEmail(e.target.value)} />
+                    <input type='text' value={email} onChange={e => setEmail(e.target.value)} placeholder="Please Enter Your E-mail"/>
 
                     <h5>Password</h5>
-                    <input type='password' value={password} onChange={e => setPassword(e.target.value)} />
+                    <input type='password' value={password} onChange={e => setPassword(e.target.value)}
+                    placeholder="Please Enter Your Password"
+                    />
 
                     <button type='submit' onClick={signIn} className='login__signInButton'>Sign In</button>
                 </form>
